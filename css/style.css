@@ -1,0 +1,117 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.text-64 {
+  font-size: 64px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-18 {
+    font-size: 18px;
+  }
+
+.text-22 {
+  font-size: 22px;
+}
+.text-16 {
+  font-size: 16px;
+}
+
+.text-15_8 {
+    font-size: 15.85px;
+  }
+
+  .text-21_5 {
+    font-size: 21.5px;
+  }
+
+
+.text-14 {
+  font-size: 14px;
+}
+
+.font-w-800 {
+  font-weight: 800;
+}
+
+.font-w-700 {
+    font-weight: 700;
+  }
+
+.font-w-400 {
+  font-weight: 400;
+}
+
+.font-w-300 {
+  font-weight: 300;
+}
+
+.text-line-24 {
+    line-height: 24px;
+  }
+
+.text-line-26 {
+  line-height: 26px;
+}
+
+.text-line-30 {
+    line-height: 26px;
+  }
+
+.text-color-white {
+  color: #fff;
+}
+
+.text-color-light-black {
+  color: #131318;
+}
+
+.text-color-light-orange {
+    color: #FF5400;
+  }
+
+.text-color-gray {
+  color: #5a5a5d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-color-light-black-70 {
+  color: rgba(19, 19, 24, 0.7);
+}
+
+.text-color-gray-30 {
+  color: rgba(19, 19, 24, 0.3);
+}
+
+.text-color-gray-500 {
+  color: rgba(19, 19, 24, 0.5);
+}
+
+.bg-orange {
+  background-color: #ff5400;
+}
+
+.bg-white {
+  background-color: #fff;
+}
