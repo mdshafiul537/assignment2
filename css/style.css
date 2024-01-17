@@ -38,6 +38,10 @@ body {
   font-size: 40px;
 }
 
+.text-32 {
+  font-size: 32px;
+}
+
 .text-28 {
   font-size: 28px;
 }
@@ -164,7 +168,7 @@ body {
 
 .banner-bg-image {
   display: block;
-  background-image: url("/images/banner-bg.png");
+  background-image: url("../images/banner-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,7 +289,7 @@ body {
 }
 
 .our-popular-tour .tours-img-area {
-  background: url("/images/popular.png") lightgray 50% / cover no-repeat;
+  background: url("../images/popular.png") lightgray 50% / cover no-repeat;
   display: block;
   width: 100%;
   min-height: 450px;
@@ -453,6 +457,137 @@ body {
 
 /** perfect-place End */
 
+/** news-letter Start */
+
+.news-letter {
+  padding-bottom: 50px;
+}
+
+.news-letter .container .items {
+  gap: 24px;
+}
+.news-letter .container .items .item {
+  width: 50%;
+  box-sizing: content-box;
+}
+
+.news-letter .container .items .item.news-item {
+  border-radius: 16px;
+  border: 1px solid #ff5400 !important;
+  border: none;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.news-letter .container .title-desc {
+  display: block;
+  padding-bottom: 25px;
+}
+
+.news-letter .container .title-desc h2,
+.news-letter .container .title-desc p {
+  margin: 12px 0px;
+}
+
+.news-letter .container form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.news-letter .container input[type="text"],
+.news-letter .container input[type="email"],
+.news-letter .container input[type="submit"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.news-letter .container input[type="text"],
+.news-letter .container input[type="email"] {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 0px 15px;
+}
+
+.news-letter .container input[type="submit"] {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.news-letter .container .item .imagearea {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  position: relative;
+}
+
+.news-letter .container .item .imagearea img {
+  width: 100%;
+}
+
+.news-letter .container .item .save-bg .save-item {
+  width: 350px;
+  height: 120px;
+  border-radius: 16px;
+  transform: rotate(-19.628deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+}
+/** news-letter End*/
+
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  height: 500px;
+  padding: 25px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .container .title-desc h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 16px;
+}
+
+footer .container .title-desc h2 {
+  width: 70%;
+  display: block;
+  padding-bottom: 20px;
+}
+
+footer .social-items {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  align-items: center;
+  height: 70px;
+}
+
+footer .social-items a {
+  text-decoration: none;
+  color: #262629;
+}
+
+footer .social-items a:hover {
+  color: #07a7f1;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     width: 600px;
@@ -608,7 +743,7 @@ body {
     width: 80%;
   }
 
-  .perfect-place .items .item .video-content{
+  .perfect-place .items .item .video-content {
     height: 360px;
   }
 
@@ -616,5 +751,47 @@ body {
     margin-top: 24px;
   }
   /** perfect-place End */
-}
 
+  /** news-letter sm start*/
+  .news-letter .container .items {
+    flex-direction: column;
+  }
+
+  .news-letter .container .items .item {
+    width: 73%;
+    padding: 30px;
+  }
+
+  .news-letter .container .items .item h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .news-letter .container .items .item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .news-letter .container input[type="submit"] {
+    font-size: 20px;
+  }
+
+  .news-letter .container .item .save-bg .save-item {
+    width: 214px;
+    height: 80px;
+    border-radius: 10.5px;
+    bottom: 50px;
+  }
+
+  .news-letter .container .item .save-bg .save-item p {
+    font-size: 15.8px;
+    font-weight: 400;
+  }
+
+  .news-letter .container .item .save-bg .save-item h3 {
+    font-size: 21.1px;
+    font-weight: 800;
+  }
+  /** news-letter sm start*/
+}

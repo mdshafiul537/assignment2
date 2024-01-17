@@ -141,15 +141,15 @@
           </p>
         </div>
         <div class="destination-items">
-          <div class="item"><img src="/images/1.png" alt="Maldives" /></div>
-          <div class="item"><img src="/images/2.png" alt="Indonesia" /></div>
-          <div class="item"><img src="/images/3.png" alt="Srilanka" /></div>
+          <div class="item"><img src="./images/1.png" alt="Maldives" /></div>
+          <div class="item"><img src="./images/2.png" alt="Indonesia" /></div>
+          <div class="item"><img src="./images/3.png" alt="Srilanka" /></div>
           <div class="item">
-            <img src="/images/4.png" alt="North America" />
+            <img src="./images/4.png" alt="North America" />
           </div>
-          <div class="item"><img src="/images/5.png" alt="Kashmir" /></div>
-          <div class="item"><img src="/images/6.png" alt="Bangladesh" /></div>
-          <div class="item"><img src="/images/7.png" alt="Bandarban" /></div>
+          <div class="item"><img src="./images/5.png" alt="Kashmir" /></div>
+          <div class="item"><img src="./images/6.png" alt="Bangladesh" /></div>
+          <div class="item"><img src="./images/7.png" alt="Bandarban" /></div>
         </div>
       </div>
     </section>
@@ -269,7 +269,6 @@
                 <source src="" type="video/mp4" />
               </video>
               <div class="player-overlay">
-               
                 <p class="text-color-white text-24 font-w-700 text-line-30">
                   Watch Our Mountain in Bangladesh
                 </p>
@@ -281,37 +280,60 @@
     </section>
 
     <section class="news-letter">
-      <div class="title-desc">
-        <h2>Newsletter</h2>
-        <p>Get your daily dose of travel news & tips. Sign up today!</p>
-        <form name="subscription">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-          <input type="submit" value="Subscription" />
-        </form>
-      </div>
-      <div class="save-bg">
-        <div class="save-item">
-          <p>Ayattravel.com</p>
-          <h3>Save up to 70%</h3>
+      <div class="container">
+        <div class="items">
+          <div class="item news-item">
+            <div class="title-desc">
+              <h2 class="text-24 text-color-light-black font-w-800">
+                Newsletter
+              </h2>
+              <p class="text-16 text-color-gray font-w-400">
+                Get your daily dose of travel news & tips. Sign up today!
+              </p>
+              <hr />
+              <form name="subscription" style="margin-top: 16px;">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <input
+                  class="text-24 font-w-800 text-color-white bg-orange"
+                  type="submit"
+                  value="Subscription"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="item">
+            <div class="save-bg">
+              <div class="imagearea">
+                <img src="./images/news.png" />
+                <div class="save-item text-color-white bg-orange">
+                  <p class="text-24 font-w-400">Ayattravel.com</p>
+                  <h3 class="text-32 font-w-800">Save up to 70%</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <div class="title-desc">
-          <h2>Ayattravel</h2>
+        <div class="title-desc text-center">
+          <h2>
+            <img src="./images/logo.png" alt="Ayat Travel Logo" /> Ayat
+            <span class="text-color-light-orange">Travel</span>
+          </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi
             vitae blandit orci potenti vulputate. Leo erat maecenas vitae
@@ -319,8 +341,12 @@
           </p>
         </div>
         <div class="social-items">
-          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"><i class="fab fa-twitter fa-2x"></i></i></a></div>
+          <div class="item"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></div>
+          <div class="item"><a href="#"><i class="fab fa-instagram fa-2x"></i></i></a></div>
+          <div class="item"><a href="#"><i class="fab fa-github fa-2x"></i></a></div>
         </div>
+        <hr>
         <div class="copy-right">
           <i class="far fa-copyright"></i>2024, All Rights Reserved
         </div>
