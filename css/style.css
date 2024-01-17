@@ -4,13 +4,20 @@ body {
   padding: 0;
 }
 
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header,
+section,
+.container {
+  box-sizing: border-box;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-body {
-  font-family: "Mulish", sans-serif;
 }
 
 .btn {
@@ -40,6 +47,10 @@ body {
 
 .text-32 {
   font-size: 32px;
+}
+
+.text-36 {
+  font-size: 36px;
 }
 
 .text-28 {
@@ -154,6 +165,55 @@ body {
 
 .items > .item {
   width: 46%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+header nav .right-nav .sm-nav-btn {
+  display: none;
+}
+
+header nav .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #131318;
+}
+
+header nav .right-nav {
+  width: 550px;
+}
+
+header nav .right-nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav .right-nav ul li {
+  list-style: none;
+}
+
+header nav .right-nav ul a {
+  display: block;
+  text-decoration: none;
+  color: #424247;
+  font-weight: 400;
+  padding: 0px 1px;
+}
+
+header nav .right-nav ul a:hover {
+  color: #ff5400;
 }
 
 .banner {
@@ -517,6 +577,12 @@ body {
   cursor: pointer;
 }
 
+.news-letter .container input::placeholder,
+input::placeholder {
+  font: 16px;
+  font-weight: 400;
+}
+
 .news-letter .container .item .imagearea {
   height: 100%;
   width: 100%;
@@ -546,8 +612,9 @@ body {
 
 footer {
   background: rgba(19, 19, 24, 0.05);
-  height: 500px;
   padding: 25px;
+  display: flex;
+  width: 100%;
 }
 
 footer .container {
@@ -557,18 +624,24 @@ footer .container {
   flex-direction: column;
 }
 
-footer .container .title-desc h2 {
+footer .container .title-desc {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 100px;
   padding-bottom: 16px;
 }
 
-footer .container .title-desc h2 {
+footer .container .title-desc a {
   width: 70%;
   display: block;
   padding-bottom: 20px;
+  text-decoration: none;
+  color: #131318;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-items {
@@ -576,24 +649,73 @@ footer .social-items {
   justify-content: space-around;
   width: 300px;
   align-items: center;
-  height: 70px;
+  height: 100px;
 }
 
 footer .social-items a {
   text-decoration: none;
-  color: #262629;
+  color: #2b3137;
 }
 
 footer .social-items a:hover {
-  color: #07a7f1;
+  text-decoration: none;
+  color: #24292e;
 }
 
+footer .social-items .item:nth-child(1) a:hover {
+  color: #00acee;
+}
+
+footer .social-items .item:nth-child(2) a:hover {
+  color: #316ff6;
+}
+
+footer .social-items .item:nth-child(3) a:hover {
+  color: #316ff6;
+}
+
+footer .container hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: rgba(19, 19, 24, 0.1);
+}
+
+footer .container .copy-right {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 600px) {
+  section {
+    margin-left: 0px;
+    margin-right: 0px;
+    box-sizing: border-box;
+  }
   .container {
-    width: 600px;
+    width: 575px;
+    box-sizing: border-box;
   }
 
   /* banner Style Start*/
+
+  header nav .logo a {
+    font-size: 21.543px;
+  }
+
+  header nav .right-nav{
+    text-align: right;
+    
+  }
+  header nav .right-nav .sm-nav-btn {
+    display: block;
+  }
+
+  header nav .right-nav ul {
+    display: none;
+  }
 
   .banner {
     width: 100%;
