@@ -612,7 +612,7 @@ input::placeholder {
 
 footer {
   background: rgba(19, 19, 24, 0.05);
-  padding: 25px;
+  padding: 25px 0px;
   display: flex;
   width: 100%;
 }
@@ -705,12 +705,12 @@ footer .container .copy-right {
     font-size: 21.543px;
   }
 
-  header nav .right-nav{
+  header nav .right-nav {
     text-align: right;
-    
   }
   header nav .right-nav .sm-nav-btn {
     display: block;
+    padding-right: 20px;
   }
 
   header nav .right-nav ul {
